@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Rust External - Driver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="socket">
+      <UniqueIdentifier>{9fd3cdb1-3c98-4d93-9d2f-a645c0d8829a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver">
+      <UniqueIdentifier>{21e95858-604a-407a-9903-6069690bcbda}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="import.h" />
+  </ItemGroup>
+</Project>
