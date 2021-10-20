@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Main\WebRequest">
+      <UniqueIdentifier>{372229eb-8b0b-4b33-9184-d36ad4e43e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Utilities">
+      <UniqueIdentifier>{b8dfb693-4603-461c-8bcf-6c181f55fc12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\ImGui">
+      <UniqueIdentifier>{9001c740-a07e-41b8-a6f1-2935f55f0f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\AES">
+      <UniqueIdentifier>{2db768dd-3bce-4e02-9f45-196bb4f0853f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="WebRequest\WebRequest.cpp">
+      <Filter>Main\WebRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>Main\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>Main\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>Main\ImGui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\cryptlib.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AES\AES.h">
+      <Filter>Main\AES</Filter>
+    </ClInclude>
+    <ClInclude Include="WebRequest\WebRequest.h">
+      <Filter>Main\WebRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Utilities.h">
+      <Filter>Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="WndProc.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>Main\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>Main\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_rect_pack.h">
+      <Filter>Main\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_textedit.h">
+      <Filter>Main\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_truetype.h">
+      <Filter>Main\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>Main\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>Main\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AES\md5.h">
+      <Filter>Main\AES</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\skCrypt.h">
+      <Filter>Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="rawCheat.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
