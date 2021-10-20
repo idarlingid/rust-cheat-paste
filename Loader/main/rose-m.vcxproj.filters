@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="client\client.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="encrypt-decrypt\encrypt-decrypt.cpp">
+      <Filter>encrypt-decrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\utilities.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\ImGui\font.cpp">
+      <Filter>menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\ImGui\imgui.cpp">
+      <Filter>menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\ImGui\imgui_draw.cpp">
+      <Filter>menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\ImGui\imgui_impl_dx9.cpp">
+      <Filter>menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\ImGui\imgui_impl_win32.cpp">
+      <Filter>menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\ImGui\imgui_widgets.cpp">
+      <Filter>menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\APIs.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\ApiTypeDefs.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\crc32.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\DebugUtils.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\export_work.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\gh_syscall.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\hash_work.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\ldasm.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\MurmurHash2A.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="debug utils\ScyllaHideDetector.cpp">
+      <Filter>debug-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="drv_mapper\portable_executable.cpp">
+      <Filter>mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="drv_mapper\service.cpp">
+      <Filter>mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="drv_mapper\utils.cpp">
+      <Filter>mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="drv_mapper\intel_driver.cpp">
+      <Filter>mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="drv_mapper\mapper.cpp">
+      <Filter>mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="syscalls\syscalls.cpp">
+      <Filter>syscalls</Filter>
+    </ClCompile>
+    <ClCompile Include="syscalls\util.cpp">
+      <Filter>syscalls</Filter>
+    </ClCompile>
+    <ClCompile Include="syscalls\apiset.cpp">
+      <Filter>syscalls</Filter>
+    </ClCompile>
+    <ClCompile Include="syscalls\debugsecurity.cpp">
+      <Filter>syscalls</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\security.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="client\client.hpp">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="encrypt-decrypt\encrypt-decrypt.hpp">
+      <Filter>encrypt-decrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="encrypt-decrypt\md5.hpp">
+      <Filter>encrypt-decrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\registrywindow.hpp">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\utilities.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\lazy_importer.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\font.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\hashes.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imconfig.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imgui.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imgui_impl_dx9.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imgui_impl_win32.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imgui_internal.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imgui_rotate.hpp">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imstb_rectpack.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imstb_textedit.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\imstb_truetype.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\images.hpp">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\xorstr.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="faprolight.hpp">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\APIs.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\ApiTypeDefs.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\CMemPtr.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\crc32.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\DebugUtils.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\export_work.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\gh_syscall.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\Hash.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\hash_work.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\Helpers.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\Helpers2.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\internal.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\ldasm.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\MurmurHash2A.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\Native.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\nt_defs.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\pch.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\PointerHashFunc.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\ScyllaHideDetector.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\syscall_defs.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\VersionHelpers.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\winapifamily.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\WinStructs.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="debug utils\XorStr.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckRemoteDebuggerPresent.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="anti-hook.h">
+      <Filter>debug-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.hpp">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="drv_mapper\mapper.hpp">
+      <Filter>mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="drv_mapper\nt.hpp">
+      <Filter>mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="drv_mapper\portable_executable.hpp">
+      <Filter>mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="drv_mapper\service.hpp">
+      <Filter>mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="drv_mapper\utils.hpp">
+      <Filter>mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="drv_mapper\intel_driver.hpp">
+      <Filter>mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="drv_mapper\intel_driver_resource.hpp">
+      <Filter>mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\ImGui\background.h">
+      <Filter>menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="RSAkey.h">
+      <Filter>encrypt-decrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\security.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="syscalls\native.h">
+      <Filter>syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="syscalls\pe.h">
+      <Filter>syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="syscalls\syscalls.h">
+      <Filter>syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="syscalls\util.h">
+      <Filter>syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="syscalls\apiset.h">
+      <Filter>syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="syscalls\debugsecurity.h">
+      <Filter>syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="syscalls\includes.h">
+      <Filter>syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr2.h">
+      <Filter>security</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{3642c753-b4b0-4f29-bc35-38fb50460f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encrypt-decrypt">
+      <UniqueIdentifier>{6e28e679-181c-44ee-b04c-65e4d3385844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menu">
+      <UniqueIdentifier>{6da13c5f-008b-4e03-8aa7-fc8c482bc520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menu\ImGui">
+      <UniqueIdentifier>{a1c87ba7-8200-46a2-9e50-ed0fa3d04f6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menu\ImGui\resources">
+      <UniqueIdentifier>{8ddb5e0b-f5a6-4493-9b27-e4474ab40e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{6b89a786-4997-41db-98f4-4d7968d79fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security">
+      <UniqueIdentifier>{23c2c21a-2c66-48ab-b1f0-bb69695acc05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{dbb46fbe-d0f4-4234-bcc0-406ca730248b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug-tools">
+      <UniqueIdentifier>{0f5f2fc0-19ce-49ea-a740-3d5e86930a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapper">
+      <UniqueIdentifier>{e6460006-e4f3-4d7a-b416-9d89f22e4fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syscalls">
+      <UniqueIdentifier>{93ab225b-1e91-4963-8f2b-035866efc8fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

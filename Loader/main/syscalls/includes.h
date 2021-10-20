@@ -1,0 +1,10 @@
+#pragma once
+#include <Windows.h>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <list>
+#include <unordered_map>
+#include <libloaderapi.h>
+#include <winternl.h>
+#include <algorithm>

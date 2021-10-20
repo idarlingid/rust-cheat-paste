@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{518E0636-BA8F-459D-ACAC-81BD33475E3E}</ProjectGuid>
+    <RootNamespace>rose-m</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectName>SteepCheat Loader</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\libs;$(IncludePath);$(DXSDK_DIR)Include;$(SolutionDir)\ext;$(SolutionDir)\ext\Blackbone;C:\Program Files\OpenSSL-Win64\include</IncludePath>
+    <LibraryPath>$(SolutionDir)\libs;$(LibraryPath);$(DXSDK_DIR)Lib\x64;C:\Users\shubert\Desktop\work\VMP 3.5.0\Lib\Windows;C:\Program Files\OpenSSL-Win64\lib</LibraryPath>
+    <TargetName>Release</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\libs;$(IncludePath);$(DXSDK_DIR)Include;$(SolutionDir)\ext;$(SolutionDir)\ext\Blackbone</IncludePath>
+    <LibraryPath>$(SolutionDir)\libs;$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
+    <TargetName>loader</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)\libs;$(IncludePath);$(DXSDK_DIR)Include;$(SolutionDir)\ext;$(SolutionDir)\ext\Blackbone</IncludePath>
+    <LibraryPath>$(SolutionDir)\libs;$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>version.lib;Blackbone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>BlackBone.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <MapExports>false</MapExports>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <GenerateMapFile>false</GenerateMapFile>
+      <EmbedManagedResourceFile>%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="debug utils\APIs.cpp" />
+    <ClCompile Include="debug utils\ApiTypeDefs.cpp" />
+    <ClCompile Include="debug utils\crc32.cpp" />
+    <ClCompile Include="debug utils\DebugUtils.cpp" />
+    <ClCompile Include="debug utils\export_work.cpp" />
+    <ClCompile Include="debug utils\gh_syscall.cpp" />
+    <ClCompile Include="debug utils\hash_work.cpp" />
+    <ClCompile Include="debug utils\ldasm.cpp" />
+    <ClCompile Include="debug utils\MurmurHash2A.cpp" />
+    <ClCompile Include="debug utils\ScyllaHideDetector.cpp" />
+    <ClCompile Include="client\client.cpp" />
+    <ClCompile Include="drv_mapper\intel_driver.cpp" />
+    <ClCompile Include="drv_mapper\mapper.cpp" />
+    <ClCompile Include="drv_mapper\portable_executable.cpp" />
+    <ClCompile Include="drv_mapper\service.cpp" />
+    <ClCompile Include="drv_mapper\utils.cpp" />
+    <ClCompile Include="encrypt-decrypt\encrypt-decrypt.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu\ImGui\font.cpp" />
+    <ClCompile Include="menu\ImGui\imgui.cpp" />
+    <ClCompile Include="menu\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="menu\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="menu\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="menu\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="syscalls\apiset.cpp" />
+    <ClCompile Include="syscalls\debugsecurity.cpp" />
+    <ClCompile Include="syscalls\syscalls.cpp" />
+    <ClCompile Include="syscalls\util.cpp" />
+    <ClCompile Include="utilities\security.cpp" />
+    <ClCompile Include="utilities\utilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="anti-hook.h" />
+    <ClInclude Include="CheckRemoteDebuggerPresent.h" />
+    <ClInclude Include="xorstr2.h" />
+    <ClInclude Include="debug utils\APIs.h" />
+    <ClInclude Include="debug utils\ApiTypeDefs.h" />
+    <ClInclude Include="debug utils\CMemPtr.h" />
+    <ClInclude Include="debug utils\crc32.h" />
+    <ClInclude Include="debug utils\DebugUtils.h" />
+    <ClInclude Include="debug utils\export_work.h" />
+    <ClInclude Include="debug utils\gh_syscall.h" />
+    <ClInclude Include="debug utils\Hash.h" />
+    <ClInclude Include="debug utils\hash_work.h" />
+    <ClInclude Include="debug utils\Helpers.h" />
+    <ClInclude Include="debug utils\Helpers2.h" />
+    <ClInclude Include="debug utils\internal.h" />
+    <ClInclude Include="debug utils\ldasm.h" />
+    <ClInclude Include="debug utils\MurmurHash2A.h" />
+    <ClInclude Include="debug utils\Native.h" />
+    <ClInclude Include="debug utils\nt_defs.h" />
+    <ClInclude Include="debug utils\pch.h" />
+    <ClInclude Include="debug utils\PointerHashFunc.h" />
+    <ClInclude Include="debug utils\ScyllaHideDetector.h" />
+    <ClInclude Include="debug utils\syscall_defs.h" />
+    <ClInclude Include="debug utils\VersionHelpers.h" />
+    <ClInclude Include="debug utils\winapifamily.h" />
+    <ClInclude Include="debug utils\WinStructs.h" />
+    <ClInclude Include="debug utils\XorStr.h" />
+    <ClInclude Include="client\client.hpp" />
+    <ClInclude Include="drv_mapper\intel_driver.hpp" />
+    <ClInclude Include="drv_mapper\intel_driver_resource.hpp" />
+    <ClInclude Include="drv_mapper\mapper.hpp" />
+    <ClInclude Include="drv_mapper\nt.hpp" />
+    <ClInclude Include="drv_mapper\portable_executable.hpp" />
+    <ClInclude Include="drv_mapper\service.hpp" />
+    <ClInclude Include="drv_mapper\utils.hpp" />
+    <ClInclude Include="encrypt-decrypt\encrypt-decrypt.hpp" />
+    <ClInclude Include="encrypt-decrypt\md5.hpp" />
+    <ClInclude Include="faprolight.hpp" />
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="menu\ImGui\background.h" />
+    <ClInclude Include="menu\ImGui\font.h" />
+    <ClInclude Include="menu\ImGui\hashes.h" />
+    <ClInclude Include="menu\ImGui\imconfig.h" />
+    <ClInclude Include="menu\ImGui\imgui.h" />
+    <ClInclude Include="menu\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="menu\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="menu\ImGui\imgui_internal.h" />
+    <ClInclude Include="menu\ImGui\imgui_rotate.hpp" />
+    <ClInclude Include="menu\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="menu\ImGui\imstb_textedit.h" />
+    <ClInclude Include="menu\ImGui\imstb_truetype.h" />
+    <ClInclude Include="menu\ImGui\images.hpp" />
+    <ClInclude Include="menu\registrywindow.hpp" />
+    <ClInclude Include="RSAkey.h" />
+    <ClInclude Include="syscalls\apiset.h" />
+    <ClInclude Include="syscalls\debugsecurity.h" />
+    <ClInclude Include="syscalls\includes.h" />
+    <ClInclude Include="syscalls\native.h" />
+    <ClInclude Include="syscalls\pe.h" />
+    <ClInclude Include="syscalls\syscalls.h" />
+    <ClInclude Include="syscalls\util.h" />
+    <ClInclude Include="utilities\lazy_importer.hpp" />
+    <ClInclude Include="utilities\security.h" />
+    <ClInclude Include="utilities\utilities.hpp" />
+    <ClInclude Include="utilities\xorstr.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
